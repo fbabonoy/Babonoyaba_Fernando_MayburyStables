@@ -4,9 +4,9 @@ import { Service } from "../data"
 function AboutUs() {
     return <div>
         <div className="card card-border bg-base-100 w-full">
-            <div className="card-body flex justify-center items-center">
-                <h2 className="card-title">Card Title</h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div className="card-body flex justify-center items-center text-center">
+                <h2 className="card-title">{stableData.aboutUs.title}</h2>
+                <p>{stableData.aboutUs.description}</p>
 
             </div>
         </div>

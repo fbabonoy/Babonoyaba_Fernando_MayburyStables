@@ -1,13 +1,12 @@
 "use client";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+// @ts-ignore
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 
 import "swiper"
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+// @ts-ignore
+import 'swiper/css'
 
 
 

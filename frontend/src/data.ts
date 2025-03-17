@@ -62,12 +62,12 @@ const stableData: StableData = {
         description: "Our stable is dedicated to providing a safe and enjoyable equestrian experience for riders of all levels. Whether you're a beginner or an experienced rider, we welcome you to be part of our community and share in the joy of horseback riding.",
         sections: [
             {
-                img: "https://example.com/meet-the-team.jpg", // Replace with an actual image URL
+                img: "https://example.com/meet-the-team.jpg", 
                 title: "Meet the Team",
                 description: "Get to know our experienced trainers and staff who are passionate about horses and dedicated to your riding success."
             },
             {
-                img: "https://example.com/meet-the-herd.jpg", // Replace with an actual image URL
+                img: "https://example.com/meet-the-herd.jpg", 
                 title: "Meet the Herd",
                 description: "Our horses are the heart of our stable. Learn more about each horse’s personality, breed, and riding style."
             }
@@ -78,22 +78,22 @@ const stableData: StableData = {
         description: "We offer a variety of horseback riding experiences, from lessons to trail rides, for all skill levels.",
         sections: [
             {
-                img: "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/475184505_122205427514226691_7639935419546751986_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8z3yXdxvxpYQ7kNvgGONbwg&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=A7hLfEYJt5XVVoewLTfakoc&oh=00_AYEKJ4Yn-9XVU8h83BXiIIbea-2SO8PdTIeKAFb-YWbyNA&oe=67D7CDE5", // Replace with actual image URL
+                img: "/images/camps.jpg",
                 title: "Camps",
                 description: "Join our seasonal horseback riding camps for an unforgettable adventure."
             },
             {
-                img: "https://static.wixstatic.com/media/c66207371c96b7369ef3b2d816105e4f.jpg/v1/fit/w_1417,h_945,al_c,q_85/c66207371c96b7369ef3b2d816105e4f.jpg",
+                img: "/images/ponyRides.jpg",
                 title: "Pony Rides",
                 description: "Perfect for young riders to experience their first horseback adventure."
             },
             {
-                img: "https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-6/475178476_122204862242226691_3917098183587472004_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=GybjnjNS-GAQ7kNvgG6xJqM&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&_nc_gid=AHnxAIhDB6zHpApGk1cdcz3&oh=00_AYEQSATBGts6Prr-W0y1AeKOrmaHk5ifF99XyvxrECsh1g&oe=67D7CA73",
+                img: "/images/trailRides.jpeg",
                 title: "Trail Rides",
                 description: "Enjoy scenic horseback rides through beautiful landscapes."
             },
             {
-                img: "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/475008787_122204912084226691_8482655025601490622_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=TCbHzIVusicQ7kNvgHSGFQg&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=ACQM81QdFuzcPAr-X5Cvigl&oh=00_AYHeat5j81_d6iTUPxhn7GwGmSUW0awdo9E9as81E3I98g&oe=67D79F87",
+                img: "/images/ridingLessons.jpg",
                 title: "Riding Lessons",
                 description: "Improve your riding skills with our experienced trainers."
             }

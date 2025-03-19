@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage'
 import MeetTheHerd from './pages/MeetTheHerd'
 import Admin from './pages/Admin'
 import FAQs from './pages/FAQs'
+import BookNow from './pages/BookNow'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/MeetTheHerd" element={<MeetTheHerd />} />
         <Route path="/faqs" element={<FAQs />} />
+        <Route path="/booknow" element={<BookNow />} />
       </Route>
 
       {/* Admin routes */}
@@ -28,7 +30,7 @@ function UserLayout() {
   const location = useLocation();
   const displayBanner = location.pathname === "/"; // Only show banner on homepage
   let title: string | undefined
-  
+
   switch (location.pathname) {
     case "/MeetTheHerd":
       title = "Meet The Herd"
@@ -36,10 +38,12 @@ function UserLayout() {
     case "/faqs":
       title = "Frequently Asked Questions"
       break
+      case "/booknow":
+        title = "Book Now"
+        break
     default:
       title = undefined
   }
-
 
   return (
     <>

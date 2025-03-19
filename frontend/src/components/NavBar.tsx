@@ -59,7 +59,9 @@ function Banner() {
                 </p>
 
                 <div className="card-actions justify-center">
+                <NavLink to="/booknow">
                     <button className="btn btn-primary btn-sm sm:btn-md">START TODAY</button>
+                </NavLink>
                 </div>
             </div>
         </div>

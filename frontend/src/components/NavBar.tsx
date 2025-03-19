@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { NavLink } from "react-router-dom";
 
-function NavBar({ displayBanner }: { displayBanner?: boolean }) {
+function NavBar({ displayBanner, title }: { displayBanner?: boolean, title?: string }) {
     return (
         <div className="h-100 relative">
             <img
@@ -9,7 +9,7 @@ function NavBar({ displayBanner }: { displayBanner?: boolean }) {
                 src="https://cdn.elebase.io/bfe7dca8-ded7-4599-acba-034c8945acf8/be281a80-9a70-40da-8008-fe7ecce263cf-cotdc9966e43bbfc9ea1.jpg?w=680&h=382&fit=crop&rot=auto&dpr=2&q=75"
                 alt=""
             />
-            <div className="navbar px-10">
+            <div className="navbar px-5 sm:px-10">
                 <div className="flex-1">
                     <NavLink to="/" end>
                         <button className="btn btn-ghost bg-white text-xl">
@@ -41,9 +41,11 @@ function NavBar({ displayBanner }: { displayBanner?: boolean }) {
                 <NavBtn to="/contact">Contact us</NavBtn>
             </div>
             {displayBanner && <Banner />}
+            {title && <h1 className="absolute left-1/2 right-5 bottom-2/8 sm:bottom-3/8 text-4xl pr-5">{title}</h1>}
         </div>
     );
 }
+
 
 function Banner() {
     return (
@@ -74,7 +76,7 @@ function LiNav({ children, to }: { children: ReactNode, to: string }) {
 
 function NavMenu({ children }: { children: ReactNode }) {
     return (
-        <div tabIndex={0} role="button" className="btn select-none btn-ghost btn-sm sm:btn-md bg-transparent hover:text-orange-600 hover:border-transparent hover:shadow-transparent sm:m-1">
+        <div tabIndex={0} role="button" className="btn select-none btn-ghost btn-xs sm:btn-md bg-transparent hover:text-orange-600 hover:border-transparent hover:shadow-transparent sm:m-1">
             {children}
         </div>
     );
@@ -82,7 +84,7 @@ function NavMenu({ children }: { children: ReactNode }) {
 
 function NavBtn({ children, to }: { children: ReactNode, to: string }) {
     return (
-        <NavLink to={to} className="btn btn-ghost bg-transparent hover:text-orange-600 btn-sm sm:btn-md hover:border-transparent sm:m-1">
+        <NavLink to={to} className="btn btn-ghost bg-transparent hover:text-orange-600 btn-xs sm:btn-md hover:border-transparent sm:m-1">
             {children}
         </NavLink>
     );

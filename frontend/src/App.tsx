@@ -17,20 +17,33 @@ function App() {
         <Route path="/faqs" element={<FAQs />} />
       </Route>
 
-      {/* Admin route (no UserLayout) */}
+      {/* Admin routes */}
       <Route path="/Admin" element={<Admin />} />
     </Routes>
   )
 }
 
-/* Layout Wrapper for User Pages */
+// Layout Wrapper for User Pages 
 function UserLayout() {
   const location = useLocation();
   const displayBanner = location.pathname === "/"; // Only show banner on homepage
+  let title: string | undefined
+  
+  switch (location.pathname) {
+    case "/MeetTheHerd":
+      title = "Meet The Herd"
+      break
+    case "/faqs":
+      title = "Frequently Asked Questions"
+      break
+    default:
+      title = undefined
+  }
+
 
   return (
     <>
-      <NavBar displayBanner={displayBanner} />
+      <NavBar displayBanner={displayBanner} title={title} />
       <Outlet /> {/* Renders the matched child route */}
       <Footer />
     </>

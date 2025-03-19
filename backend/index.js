@@ -51,7 +51,7 @@ app.get("/posts/:id", async (req, res)=> {
 
 })
 
-app.put("")
+app.put(" ")
 
 app.listen(port, ()=> {
     console.log(`connected ${port}`)

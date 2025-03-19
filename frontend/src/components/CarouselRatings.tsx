@@ -47,7 +47,6 @@ const CarouselRatings = () => {
       navigation
       loop={true}
       autoplay={{ delay: 5000 }}
-      onSlideChange={() => console.log('slide change')}
       breakpoints={{
         640: {
           slidesPerView: 3, // Show 3 slides on screens larger than 640px

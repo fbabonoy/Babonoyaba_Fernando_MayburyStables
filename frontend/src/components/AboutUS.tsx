@@ -11,8 +11,8 @@ function AboutUs() {
             </div>
         </div>
         <div className="w-full flex justify-around flex-wrap">
-            {stableData.services.sections.map((service) => {
-                return <Card img={service.img} title={service.title} description={service.description} />
+            {stableData.services.sections.map((service, index) => {
+                return <Card key={index} img={service.img} title={service.title} description={service.description} />
             })}
         </div>
     </div>

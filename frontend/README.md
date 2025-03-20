@@ -4,6 +4,17 @@
 Create a full-stack web application using **MongoDB, Express, React, and Node (MERN).**
 
 -------------------------------------------------------------
+## Overview
+MaybutyStables is a website that provides information and booking capabilities for horseback riding services. The website is designed to be user-friendly and visually appealing.
+
+### Features
+The website will have the following features:
+
+- A homepage that provides an overview of the services offered and a call to action to visit the booking page.
+- An about page that provides information about the company and its mission.
+- A booking page that allows users to select a date and time for their horseback ride, select the type of ride they want, and input their contact information.
+- A reviews page that displays reviews from previous customers.
+- An admin page that allows the website administrator to add and remove services, and view and manage bookings.
 
 ### Your presentation should include:
 1. A demonstration of the application.
@@ -37,8 +48,8 @@ As you finish building your application, ask yourself the following questions:
 
 - [X] Demonstrate proper usage of ES6 syntax and tools.
 - [X] Use functions and classes to adhere to the DRY principle.
-- [] Use Promises and async/await, where appropriate.
-- [] Use Axios or fetch to retrieve data from an API.
+- [X] Use Promises and async/await, where appropriate.
+- [X] Use Axios or fetch to retrieve data from an API.
 - [X] Use sound programming logic throughout the application.
 - [] Use appropriate exception handling. (or in my case OVERuse)
 
@@ -46,8 +57,8 @@ As you finish building your application, ask yourself the following questions:
 ## (9%) Database
 
 - [X] Use MongoDB to create a database for your application. **(5%)**
-- [ ] Apply appropriate indexes to your database collections. **(2%)**
-- [ ] Create reasonable schemas for your data by following data modeling best practices. **(2%)**
+- [X] Apply appropriate indexes to your database collections. **(2%)**
+- [X] Create reasonable schemas for your data by following data modeling best practices. **(2%)**
 
 ---
 
@@ -57,16 +68,15 @@ As you finish building your application, ask yourself the following questions:
   - *For the purposes of this project, you may forgo the HATEOAS aspect of REST APIs.* **(7%)**
 - [ ] Include API routes for all four CRUD operations. **(5%)**
 - [X] Utilize the native MongoDB driver or Mongoose to interface with your database. **(5%)**
-- [] Include at least one form of user authentication/authorization within the application. **(2%)**
 
 ## (35%) Front-End Development
 
 - [X] Use React to create the application’s front-end. **(10%)**
 - [X] Use CSS to style the application. **(5%)** (OR scss!)
-- [ ] Create at least four different views or pages for the application. **(5%)**
-- [ ] Create some form of navigation that is included across the application’s pages, utilizing React Router for page rendering. **(5%)**
-- [ ] Use React Hooks or Redux for application state management. **(5%)**
-- [ ] Interface directly with the server and API that you created. **(5%)**
+- [X] Create at least four different views or pages for the application. **(5%)**
+- [X] Create some form of navigation that is included across the application’s pages, utilizing React Router for page rendering. **(5%)**
+- [X] Use React Hooks or Redux for application state management. **(5%)**
+- [X] Interface directly with the server and API that you created. **(5%)**
 
 ---
 
@@ -87,8 +97,9 @@ You must complete **ALL** other requirements to receive credit for this section;
 
 ## (5%) Extra Credit
 
-- [ ] Adhere to Agile principles and the Scrum framework. Perform stand-up sessions (with an instructor) when possible. **(1%)**
+- [X] Adhere to Agile principles and the Scrum framework. Perform stand-up sessions (with an instructor) when possible. **(1%)**
 - [ ] Successfully track your project using software similar to Jira. **(1%)**
 - [X] Build your application primarily with TypeScript. **(3%)**
+
 
 

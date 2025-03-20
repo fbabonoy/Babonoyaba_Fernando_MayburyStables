@@ -29,7 +29,7 @@ function MeetTheHerd({change}: {change?:boolean}) {
     }, [change])
 
     return (
-        <div className="flex flex-wrap m-5 justify-between items-center pb-3" >
+        <div className="flex flex-wrap m-5 justify-evenly items-center p-5" >
             {data && data.map((card : ImageData)=>{
                 console.log(card.imageUrl)
                 return (

@@ -57,12 +57,12 @@ const CarouselRatings = () => {
       }}
     >
         {ratings.map((review, index) => (
-          <SwiperSlide key={index} className="p-8 border rounded-lg shadow-lg bg-white">
-            <div className="flex flex-col items-center gap-2 mb-2">
-              <span className="text-xl font-semibold text-stone-600">{review.name}</span>
+          <SwiperSlide key={index} className="p-8 border rounded-lg shadow-lg  bg-cyan-800 border-b-cyan-700 ">
+            <div className="flex flex-col items-center gap-2 mb-2 ">
+              <span className="text-xl font-semibold text-amber-50">{review.name}</span>
               <span className="text-yellow-500">{'⭐'.repeat(review.rating)}</span>
             </div>
-            <p className="text-gray-700 line-clamp-3 text-center">{review.comment}</p>
+            <p className="text-amber-50 line-clamp-3 text-center">{review.comment}</p>
           </SwiperSlide>
         ))}
       </Swiper>

@@ -1,6 +1,5 @@
-import { Service } from "../data"
 
-function Card({ img, title }: Service) {
+function Card({ img, title }: { img: string, title: string }) {
     return (
         <div className="h-70 sm:h-90 lx:24/100 lg:w-23/100  md:w-22/100 sm:w-18/80 relative mb-3 sm:mb-0">
             <img className="h-full w-full object-cover rounded-2xl"

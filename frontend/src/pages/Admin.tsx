@@ -1,4 +1,5 @@
 import { useState, useRef, ChangeEvent } from "react";
+import MeetTheHerd from "./MeetTheHerd";
 
 function Admin() {
     const [displayMore, setDisplayMore] = useState<boolean>(false);
@@ -93,9 +94,8 @@ function Admin() {
                         </button>
                     </fieldset>
                 )}
-                {
-                    
-                }
+                <MeetTheHerd change={displayMore}></MeetTheHerd>
+
             </div>
         </div>
     );

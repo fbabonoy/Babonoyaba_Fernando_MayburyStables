@@ -1,10 +1,8 @@
 import mongoose from "mongoose";
 
 const postSchema = new mongoose.Schema({
-    subject: { type: String },
-    body: { type: String },
-    user: { type: String },
-    comments: [],
+    title: { type: String },
+    imageUrl: { type: String },
     createdAt: { type: Date, default: Date.now }
 })
 

@@ -1,4 +1,4 @@
-import AboutUs from "../components/AboutUs"
+import AboutUs from "../components/AboutUS"
 import CarouselRatings from "../components/CarouselRatings"
 import RideInfo from "../components/RideInfoCard"
 

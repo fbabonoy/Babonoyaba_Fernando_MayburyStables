@@ -5,8 +5,10 @@ function NavBar({ displayBanner, title }: { displayBanner?: boolean, title?: str
     return (
         <div className="h-100 relative">
             <img
-                className="absolute w-full h-full object-cover -z-10 rounded-b-2xl dark:opacity-70"
-                src="https://cdn.elebase.io/bfe7dca8-ded7-4599-acba-034c8945acf8/be281a80-9a70-40da-8008-fe7ecce263cf-cotdc9966e43bbfc9ea1.jpg?w=680&h=382&fit=crop&rot=auto&dpr=2&q=75"
+                className="absolute w-full h-full object-cover -z-10 rounded-b-2xl dark:opacity-70 "
+                //replace to front page
+
+                src="/images/header.jpg"
                 alt=""
             />
             <div className="navbar px-5 sm:px-10">

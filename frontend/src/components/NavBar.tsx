@@ -3,23 +3,13 @@ import { NavLink } from "react-router-dom";
 
 function NavBar({ displayBanner, title }: { displayBanner?: boolean, title?: string }) {
     return (
-        <div className="h-100 relative">
-            <img
-                className="absolute w-full h-full object-cover -z-10 rounded-b-2xl dark:opacity-70 "
-                //replace to front page
-
-                src="/images/header.jpg"
-                alt=""
-            />
+        <div className="w-full h-100 relative bg-[url(/images/header.jpg)] bg-fixed bg-no-repeat bg-[center_-320px] text-white">
             <div className="navbar px-5 sm:px-10">
                 <div className="flex-1">
                     <NavLink to="/" end>
-                        <button className="btn btn-ghost bg-white text-xl">
-                            <img
-                                className='h-full'
-                                src="/images/logo.jpg"
-                                alt="Logo"
-                            />
+                        <button className="btn dark:btn-ghost text-xl 
+                        bg-[url('/images/logoLight.png')] dark:bg-[url('/images/logoDark.png')]  
+                        bg-no-repeat bg-center bg-contain w-1/4 md:w-1/9">
                         </button>
                     </NavLink>
                 </div>
@@ -51,7 +41,7 @@ function NavBar({ displayBanner, title }: { displayBanner?: boolean, title?: str
 
 function Banner() {
     return (
-        <div className="card absolute bg-amber-800 w-2/4 h-2/3 right-3 bottom-10 p-1 sm:p-5">
+        <div className="card absolute bg-[#6A1900] w-2/4 h-2/3 right-1/10 bottom-10  p-1 sm:p-5 opacity-80">
             <div className="card-body text-white">
                 <h2 className="card-title text-xl md:text-5xl sm:text-4xl">SADDLE UP!</h2>
                 <h2 className="card-title text-sm sm:whitespace-normal md:text-4xl sm:text-3xl">START RIDING!</h2>
@@ -61,9 +51,9 @@ function Banner() {
                 </p>
 
                 <div className="card-actions justify-center">
-                <NavLink to="/booknow">
-                    <button className="btn btn-primary btn-sm sm:btn-md">START TODAY</button>
-                </NavLink>
+                    <NavLink to="/booknow">
+                        <button className="btn btn-primary btn-sm sm:btn-md">START TODAY</button>
+                    </NavLink>
                 </div>
             </div>
         </div>

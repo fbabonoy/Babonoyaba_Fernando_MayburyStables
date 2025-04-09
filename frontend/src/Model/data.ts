@@ -88,12 +88,12 @@ const stableData: StableData = {
                 description: "Perfect for young riders to experience their first horseback adventure."
             },
             {
-                img: "/images/trailRides.jpeg",
+                img: "/images/ridingLessons.jpg",
                 title: "Trail Rides",
                 description: "Enjoy scenic horseback rides through beautiful landscapes."
             },
             {
-                img: "/images/ridingLessons.jpg",
+                img: "/images/trailRides.jpeg",
                 title: "Riding Lessons",
                 description: "Improve your riding skills with our experienced trainers."
             }

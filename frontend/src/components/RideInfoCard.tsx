@@ -17,11 +17,13 @@ function RideInfoCard() {
                         border = "sm:rounded-br-2xl"
                     }
                     return (
-                        <div key={index} className={`flex flex-col justify-center items-center text-center pl-3 pr-3 h-1/2 w-1/2 bg-amber-800 ${border}`}>
+                        <div key={index} className={`flex justify-center items-center text-center pl-3 pr-3 h-1/2 w-1/2 bg-amber-800 ${border}`}>
                             {/* <img src="" alt="" /> */}
-                            <h1 className="text-2xl">{data.icon}</h1>
-                            <h2 className="text-md">{data.title}</h2>
-                            <p className="text-sm line-clamp-5">{data.description}</p>
+                            <h1 className="text-6xl m-4">{data.icon}</h1>
+                            <div className="text-left ml-5">
+                            <h2 className="text-4xl">{data.title}</h2>
+                            <p className="text-xl line-clamp-5 ">{data.description}</p>
+                            </div>
 
                         </div>
                     )

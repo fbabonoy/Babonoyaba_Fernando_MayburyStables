@@ -6,7 +6,7 @@ function Card({ img, title }: { img: string, title: string }) {
                 src={img}
                 alt="Shoes" />
             <div className="flex justify-center">
-                <h2 className="card-title absolute bottom-5 bg-amber-600 w-full flex justify-center opacity-85">{title}</h2>
+                <h2 className="card-title absolute h-1/5 text-3xl bottom-5  bg-[#E86849] w-full flex justify-center opacity-85">{title}</h2>
             </div>
         </div>
     )

@@ -41,7 +41,7 @@ function NavBar({ displayBanner, title }: { displayBanner?: boolean, title?: str
 
 function Banner() {
     return (
-        <div className="card absolute bg-[#6A1900] w-2/4 h-2/3 right-1/10 bottom-10  p-1 sm:p-5 opacity-80">
+        <div className="card absolute bg-[#6A1900] w-2/4 h-2/3 right-1/10 bottom-10  p-1 sm:p-5 opacity-90">
             <div className="card-body text-white">
                 <h2 className="card-title text-xl md:text-5xl sm:text-4xl">SADDLE UP!</h2>
                 <h2 className="card-title text-sm sm:whitespace-normal md:text-4xl sm:text-3xl">START RIDING!</h2>
@@ -52,7 +52,7 @@ function Banner() {
 
                 <div className="card-actions justify-center">
                     <NavLink to="/booknow">
-                        <button className="btn btn-primary btn-sm sm:btn-md">START TODAY</button>
+                        <button className="btn btn-ghost btn-sm sm:btn-md bg-[#008080]">START TODAY</button>
                     </NavLink>
                 </div>
             </div>

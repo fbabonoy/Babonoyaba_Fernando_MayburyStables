@@ -8,7 +8,7 @@ function RideInfoCard() {
                 className="h-1/2 sm:h-full sm:w-18/40 object-cover  sm:rounded-l-2xl "
                 src={rideInfo.banner}
                 alt="banner" />
-            <div className="h-1/2 sm:h-full sm:w-22/40 flex flex-wrap ">
+            <div className="h-1/2 sm:h-full sm:w-22/40 flex flex-wrap">
                 {rideInfo.buttonData.map((data: ButtonData, index: number) => {
                     let border: string = ""
                     if (index === 1) {
@@ -17,7 +17,7 @@ function RideInfoCard() {
                         border = "sm:rounded-br-2xl"
                     }
                     return (
-                        <div key={index} className={`flex justify-center items-center text-center pl-3 pr-3 h-1/2 w-1/2 bg-amber-800 ${border}`}>
+                        <div key={index} className={`flex justify-center items-center text-center pl-3 pr-3 h-1/2 w-1/2 bg-[#90260cd2] ${border}`}>
                             {/* <img src="" alt="" /> */}
                             <h1 className="text-6xl m-4">{data.icon}</h1>
                             <div className="text-left ml-5">

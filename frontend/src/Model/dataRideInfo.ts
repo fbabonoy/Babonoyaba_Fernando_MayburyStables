@@ -19,22 +19,22 @@ const rideInfo: RideInfo = {
       { 
         title: "Please Be Kind", 
         icon: "🤗", 
-        description: "Treat the horses and guides with kindness and respect during your ride." 
+        description: "Please treat the horses and guides with kindness and respect during your ride. Horses are xxx" 
       },
       { 
-        title: "Tip Your Guide", 
+        title: "Reserve Your Spot", 
         icon: "💰", 
-        description: "Our guides work hard to ensure your safety and enjoyment—tips are greatly appreciated!" 
+        description: "Appointments are recommended, especially in summer. Walk-ins are welcome, but availability is not guaranteed without a reservation." 
       },
       { 
-        title: "Safety", 
+        title: "Safety First", 
         icon: "⚠️", 
-        description: "We prioritize safety—helmets are recommended, and our guides are here to help." 
+        description: "We prioritize safety. Helmets are strongly encouraged. We advise you bring your own fitted helmet, or if needed, we have ASTM/SEI certified helmets available in various sizes. " 
       },
       { 
         title: "Beginners Welcomed", 
         icon: "🐴", 
-        description: "No experience? No problem! Our horses are gentle, and we’ll match you with the right one." 
+        description: "While all of our horses are gentle and experienced with riders, we make sure to match our riders with the right horse based on your riding experience." 
       }
     ]
   };

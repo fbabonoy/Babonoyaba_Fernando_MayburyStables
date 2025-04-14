@@ -51,7 +51,7 @@ const ratings = [
 
 const CarouselRatings = () => {
   return (
-    <div className="w-full h-full px-4 mb-7">
+    <div className="w-full px-4 md:px-6 mb-7">
        <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
       spaceBetween={50}
@@ -59,8 +59,11 @@ const CarouselRatings = () => {
       loop={true}
       autoplay={{ delay: 5000 }}
       breakpoints={{
-        640: {
+        1500: {
           slidesPerView: 3, // Show 3 slides on screens larger than 640px
+        },
+        640: {
+          slidesPerView: 2, // Show 3 slides on screens larger than 640px
         },
         0: {
           slidesPerView: 1, // Show 1 slide on small screens (default)
@@ -72,9 +75,9 @@ const CarouselRatings = () => {
           key={index}
           className="p-8 border rounded-lg shadow-lg bg-cyan-800 border-b-cyan-700 flex items-stretch"
         >
-          <div className="flex flex-col items-center gap-2 mb-2 h-full justify-between min-h-[180px]">
+          <div className="flex flex-col items-center mb-1 h-full justify-between min-h-[180px]">
             <span className="text-xl font-semibold text-amber-50">{review.name}</span>
-            <span className="text-yellow-500">{'⭐'.repeat(review.rating)}</span>
+            {/* <span className="text-yellow-500">{'⭐'.repeat(review.rating)}</span> */}
             <span className="text-amber-50 line-clamp-6 text-center min-h-full">{review.comment}</span>
           </div>
         </SwiperSlide>

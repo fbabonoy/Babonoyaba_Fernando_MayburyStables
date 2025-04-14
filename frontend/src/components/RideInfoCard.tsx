@@ -18,11 +18,11 @@ function RideInfoCard() {
                     }
                     return (
                         <div key={index} className={`flex justify-center items-center text-center pl-1 pr-1 md:pl-3 md:pr-3 h-1/2 sm:w-1/2 bg-[#90260cd2] ${border}`}>
-                            {/* <img src="" alt="" /> */}
-                            <h1 className="text-4xl sm:text-3xl md:text-xl lg:text-4xl xl:text-5xl 2xl:text-7xl sm:mr-2 lg:mr-4">{data.icon}</h1>
+                            <img src={data.icon} alt=""  className="w-1/6 md:mr-4"/>
+                            {/* <h1 className="text-4xl sm:text-3xl md:text-xl lg:text-4xl xl:text-5xl 2xl:text-7xl sm:mr-2 lg:mr-4">{data.icon}</h1> */}
                             <div className="text-left m-2 sm:m-0">
-                            <h2 className="text-xl md:text-lg xl:text-4xl font-bold">{data.title}</h2>
-                            <p className="text-sm md:text-base lg:text-base xl:text-lg 2xl:text-xl line-clamp-6 sm:line-clamp-9 ">{data.description}</p>
+                            <h2 className="text-xl xl:text-4xl font-bold">{data.title}</h2>
+                            <p className="text-lg md:text-base lg:text-base xl:text-lg 2xl:text-xl line-clamp-6 sm:line-clamp-9 ">{data.description}</p>
                             </div>
 
                         </div>

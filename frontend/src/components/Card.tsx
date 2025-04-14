@@ -1,7 +1,7 @@
 
 function Card({ img, title }: { img: string, title: string }) {
     return (
-        <div className="h-70 sm:h-90 lx:24/100 lg:w-23/100  md:w-22/100 sm:w-18/80 relative mb-3 sm:mb-0">
+        <div className="h-70 sm:w-9/20 lg:h-90 lx:w-24/100 lg:w-23/100 relative mb-3 object-cover">
             <img className="h-full w-full object-cover rounded-2xl"
                 src={img}
                 alt="Shoes" />

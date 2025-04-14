@@ -41,7 +41,7 @@ function NavBar({ displayBanner, title }: { displayBanner?: boolean, title?: str
 
 function Banner() {
     return (
-        <div className="card absolute bg-[#6A1900] w-2/4 h-2/3 right-1/10 bottom-10  p-1 sm:p-5 opacity-90">
+        <div className="card absolute bg-[#6A1900] h-2/3 md:w-2/4 md:h-2/3 md:right-1/10 bottom-10 ml-10 mr-10 md:mr-0 md:ml-0 sm:p-5 opacity-90">
             <div className="card-body text-white">
                 <h2 className="card-title text-xl md:text-5xl sm:text-4xl">SADDLE UP!</h2>
                 <h2 className="card-title text-sm sm:whitespace-normal md:text-4xl sm:text-3xl">START RIDING!</h2>

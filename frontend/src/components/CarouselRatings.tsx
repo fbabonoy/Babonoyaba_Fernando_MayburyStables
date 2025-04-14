@@ -54,19 +54,19 @@ const CarouselRatings = () => {
     <div className="w-full px-4 md:px-6 mb-7">
        <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-      spaceBetween={50}
+      spaceBetween={40}
       navigation
       loop={true}
       autoplay={{ delay: 5000 }}
       breakpoints={{
-        1500: {
-          slidesPerView: 3, // Show 3 slides on screens larger than 640px
+        1536: {
+          slidesPerView: 3,
         },
         640: {
           slidesPerView: 2, // Show 3 slides on screens larger than 640px
         },
         0: {
-          slidesPerView: 1, // Show 1 slide on small screens (default)
+          slidesPerView: 1,
         },
       }}
     >
@@ -75,10 +75,10 @@ const CarouselRatings = () => {
           key={index}
           className="p-8 border rounded-lg shadow-lg bg-cyan-800 border-b-cyan-700 flex items-stretch"
         >
-          <div className="flex flex-col items-center mb-1 h-full justify-between min-h-[180px]">
+          <div className="flex flex-col items-center mb-1 h-full justify-between min-h-[180px] sm:min-h-[270px] md:min-h-[220px] lg:min-h-[150px] 2lx:min-h-[200px]">
             <span className="text-xl font-semibold text-amber-50">{review.name}</span>
             {/* <span className="text-yellow-500">{'⭐'.repeat(review.rating)}</span> */}
-            <span className="text-amber-50 line-clamp-6 text-center min-h-full">{review.comment}</span>
+            <span className="text-amber-50 text-center min-h-full">{review.comment}</span>
           </div>
         </SwiperSlide>
         

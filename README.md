@@ -17,15 +17,7 @@ Create a full-stack web application using modern technologies, demonstrating:
 - End-to-end application development
 - RESTful API implementation
 - Clean UI/UX using React
-- Integration of front and back-end using Axios and MongoDB
-
----
-
-## 📸 Screenshots
-
-> Add screenshots in the `/screenshots` folder and link them below
-
-
+- Integration of front and back-end using Fetch and MongoDB
 
 ---
 
@@ -33,7 +25,6 @@ Create a full-stack web application using modern technologies, demonstrating:
 
 - 🌐 **Homepage** – Highlights services and invites users to book.
 - 📖 **About Page** – Learn more about the company’s mission and values.
-- 📅 **Booking System** – Choose date, time, ride type, and enter contact info.
 - ⭐ **Reviews Page** – Displays feedback from previous riders.
 - 🔐 **Admin Panel** – Manage services and bookings with full CRUD access.
 
@@ -54,6 +45,3 @@ Create a full-stack web application using modern technologies, demonstrating:
 - Mongoose
 
 ---
-
-## 📂 Project Structure
-

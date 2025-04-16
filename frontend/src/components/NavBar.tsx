@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function NavBar({ displayBanner, title }: { displayBanner?: boolean, title?: string }) {
     return (
-        <div className="w-full h-100 relative bg-[url(/images/header.jpg)] bg-fixed bg-no-repeat bg-[center_-320px] text-white">
+        <div className="w-full h-150 sm:h-160 xl:h-140 relative bg-[url(/images/header.jpg)] bg-fixed bg-no-repeat bg-[center_-320px] text-white">
             <div className="navbar px-5 sm:px-10">
                 <div className="flex-1">
                     <NavLink to="/" end>
@@ -41,18 +41,19 @@ function NavBar({ displayBanner, title }: { displayBanner?: boolean, title?: str
 
 function Banner() {
     return (
-        <div className="card absolute bg-[#6A1900] h-2/3 md:w-2/4 md:h-2/3 md:right-1/10 bottom-10 ml-10 mr-10 md:mr-0 md:ml-0 sm:p-5 opacity-90">
+        <div className="card absolute bg-[#6A1900] h-2/3 md:w-4/6 md:h-2/3 md:right-1/10 xl:w-4/7 2xl:w-4/8 bottom-10 ml-10 mr-10 md:mr-0 md:ml-0 sm:p-5 opacity-90">
             <div className="card-body text-white">
-                <h2 className="card-title text-xl md:text-5xl sm:text-4xl">SADDLE UP!</h2>
-                <h2 className="card-title text-sm sm:whitespace-normal md:text-4xl sm:text-3xl">START RIDING!</h2>
+                <h2 className="card-title text-3xl md:text-5xl sm:text-5xl">SADDLE UP!</h2>
+                <h2 className="card-title text-2xl sm:whitespace-normal md:text-3xl sm:text-4xl">START RIDING!</h2>
 
-                <p className="text-xs lg:text-sm md:textarea-sm sm:text-sm">
-                    Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.
+                <p className="text-xl pt-5 sm:text-xl lg:text-xl md:text-lg ">
+                Welcome to Maybury Stables! We offer trail rides, riding lessons, and a unique youth equestrian summer camp where campers can explore their independence while enjoying a fun-filled experience. 
+                If you’re looking for an unforgettable adventure, consider Maybury Stables.
                 </p>
 
-                <div className="card-actions justify-center">
+                <div className="card-actions justify-end">
                     <NavLink to="/booknow">
-                        <button className="btn btn-ghost btn-sm sm:btn-md bg-[#008080]">START TODAY</button>
+                        <button className="btn btn-ghost btn-sm sm:btn-md text-xl bg-[#008080] p-5 mb-3 mr-3 sm:mr-0 sm:mb-0">Book Today</button>
                     </NavLink>
                 </div>
             </div>

@@ -9,7 +9,7 @@ function NavBar({ displayBanner, title }: { displayBanner?: boolean, title?: str
                     <NavLink to="/" end>
                         <button className="btn dark:btn-ghost text-xl 
                         bg-[url('/images/logoLight.png')] dark:bg-[url('/images/logoDark.png')]  
-                        bg-no-repeat bg-center bg-contain w-1/4 md:w-1/9">
+                        bg-no-repeat bg-center bg-contain w-3/4 md:w-40 lg:w-40 lg:h-15">
                         </button>
                     </NavLink>
                 </div>
@@ -71,7 +71,7 @@ function LiNav({ children, to }: { children: ReactNode, to: string }) {
 
 function NavMenu({ children }: { children: ReactNode }) {
     return (
-        <div tabIndex={0} role="button" className="btn select-none btn-ghost btn-xs sm:btn-md bg-transparent hover:text-orange-600 hover:border-transparent hover:shadow-transparent sm:m-1">
+        <div tabIndex={0} role="button" className="btn select-none btn-ghost btn-md sm:btn-md bg-transparent hover:text-orange-600 hover:border-transparent hover:shadow-transparent sm:m-1">
             {children}
         </div>
     );
@@ -79,7 +79,7 @@ function NavMenu({ children }: { children: ReactNode }) {
 
 function NavBtn({ children, to }: { children: ReactNode, to: string }) {
     return (
-        <NavLink to={to} className="btn btn-ghost bg-transparent hover:text-orange-600 btn-xs sm:btn-md hover:border-transparent sm:m-1">
+        <NavLink to={to} className="btn btn-ghost bg-transparent hover:text-orange-600 btn-md sm:btn-md hover:border-transparent sm:m-1">
             {children}
         </NavLink>
     );
